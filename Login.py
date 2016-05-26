@@ -21,8 +21,8 @@ try:
     e3=WebDriverWait(driver,10).until(
     EC.presence_of_element_located((By.LINK_TEXT,"Login"))
     )
-    driver.find_element_by_name('username').send_keys('narendra')
-    driver.find_element_by_name('passwd').send_keys('Banda123')
+    driver.find_element_by_name('username').send_keys('Your_username')
+    driver.find_element_by_name('passwd').send_keys('Your_password')
     driver.find_element_by_name('rememberme').click()
     #res=e1&e2&e3
     res=BeautifulSoup(driver.page_source)
